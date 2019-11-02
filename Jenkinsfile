@@ -1,4 +1,4 @@
-pipeline{
+
     node{
         stage('Git Checkout') {
             git 'https://github.com/mnwaokeafor/Docker_Pipeline.git'
@@ -11,4 +11,4 @@ pipeline{
             sh 'docker build -t mnwaokeafor/my-app:0.0.1 .'
         }
     }
-}
+
